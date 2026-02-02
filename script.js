@@ -11,3 +11,17 @@ const question=[
         answer: 0
     }
 ];
+
+const questionElement=document.getElementById("question");
+const choiceElement=document.getElementById("choices");
+
+const currentQuestion=question[0];
+
+questionElement.textContent=currentQuestion.question;
+
+currentQuestion.answer.choices.array.forEach(choices=> {
+    const button=document.createElement=("button")
+    button.textContent=choice;
+    button.className="choice"
+    choiceElement.appendChild(button);
+});
