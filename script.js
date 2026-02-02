@@ -20,9 +20,9 @@ const currentQuestion=questions[0];
 
 questionElement.textContent=currentQuestion.question;
 
-currentQuestion.answer.choices.array.forEach(choice => {
-    const button=document.createElement=("button")
+currentQuestion.choices.forEach(choice => {
+    const button = document.createElement("button"); 
     button.textContent=choice;
-    button.className="choices";
+    button.className = "choice"; 
     choiceElement.appendChild(button);
 });
