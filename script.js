@@ -13,15 +13,15 @@ const questions=[
 ];
 
 const questionElement=document.getElementById("question");
-const choiceElement=document.getElementById("choice");
+const choiceElement=document.getElementById("choices");
 
 const currentQuestion=questions[0];
 
 questionElement.textContent=currentQuestion.question;
 
-currentQuestion.answer.choices.array.forEach(choice => {
+currentQuestion.answer.choices.array.forEach(choices => {
     const button=document.createElement=("button")
     button.textContent=choice;
-    button.className="choice";
+    button.className="choices";
     choiceElement.appendChild(button);
 });
