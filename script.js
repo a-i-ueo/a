@@ -13,7 +13,7 @@ const questions=[
 ];
 
 const questionElement=document.getElementById("question");
-const choiceElement=document.getElementById("choices");
+const choiceElement=document.getElementById("choice");
 
 const currentQuestion=questions[0];
 
