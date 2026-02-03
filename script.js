@@ -18,7 +18,7 @@ const choiceElement=document.getElementById("choices");
 const resulteElement=document.getElementById("result");
 
 function showQuestion(){
-    const q =quwstions[0];
+    const q =questions[0];
     questionElement.textContent=q.question;
     choiceElement.innerHTML="";
     resulteElement.textContent="";
@@ -36,7 +36,6 @@ function showQuestion(){
         });
         choiceElement.appendChild(button);
     });
-
 }
 
 showQuestion();
