@@ -18,7 +18,7 @@ const choiceElement=document.getElementById("choices");
 const resulteElement=document.getElementById("result");
 
 function showQuestion(){
-    const q =quwstion[0];
+    const q =quwstions[0];
     questionElement.textContent=q.question;
     choiceElement.innerHTML="";
     resulteElement.textContent="";
@@ -29,25 +29,14 @@ function showQuestion(){
 
         button.addEventListener("click",()=>{
             if(index===q.answer){
-                resulteElement.twxContent="正解!";
+                resulteElement.textContent="正解!";
             }else{
-                resulteElement.twxContent="不正解!";
+                resulteElement.textContent="不正解!";
             }
         });
         choiceElement.appendChild(button);
     });
 
 }
-const currentQuestion=questions[0];
-
-questionElement.textContent=currentQuestion.question;
-
-currentQuestion.choices.forEach(choice => {
-    const button = document.createElement("button"); 
-    button.textContent=choice;
-    button.className = "choice"; 
-    choiceElement.appendChild(button);
-
-});
 
 showQuestion();
