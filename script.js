@@ -51,7 +51,7 @@ function showQuestion(){
                 resulteElement.textContent="不正解!";
             }
 
-            explantionElement=q.explantion;
+            explantionElement.textContent=q.explantion;
 
             setTimeout(() =>{
                 currentIndex++;
