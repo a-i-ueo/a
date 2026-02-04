@@ -19,7 +19,7 @@ const questions=[
             "エ 全データのうち、実際に正しく予測できなかったデータの割合",
         ],
         answer:1,
-        explantion:
+        explanation:
         "ア-異常を正常と誤判定する割合。→偽陰性\nイ-正解!\nウ-異常を正しく検出する割合。→真陽性率\nエ-誤検知が少ない。→偽陽性率の定義ではない。",
 
     }
@@ -51,7 +51,7 @@ function showQuestion(){
                 resulteElement.textContent="不正解!";
             }
 
-            explantionElement.textContent=q.explantion;
+            explanationElement.textContent=q.explanation;
 
             setTimeout(() =>{
                 currentIndex++;
@@ -60,7 +60,7 @@ function showQuestion(){
                 } else{
                     questionElement.textContent="おわり!!!!";
                     choiceElement.innerHTML="";
-                    explantionElement.textContent="";
+                    explanationElement.textContent="";
                 }
             }, 2000);
         });
