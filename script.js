@@ -6,9 +6,8 @@ const questions=[
             "イ 50",
             "ウ 67",
             "エ 88",
-
         ],
-        answer: 1
+        answer: 1,
 
     },
     {
@@ -19,7 +18,10 @@ const questions=[
             "ウ 実際に”間違い”であるデータに対し、正しく”間違い”と予測したデータの割合",
             "エ 全データのうち、実際に正しく予測できなかったデータの割合",
         ],
-        answer:1
+        answer:1,
+        explantion:
+        "ア-異常を正常と誤判定する割合。→偽陰性\nイ-正解!\nウ-異常を正しく検出する割合。→真陽性率\nエ-誤検知が少ない。→偽陽性率の定義ではない。",
+
     }
 ];
 
@@ -49,6 +51,8 @@ function showQuestion(){
                 resulteElement.textContent="不正解!";
             }
 
+            explantionElement=q.explantion;
+
             setTimeout(() =>{
                 currentIndex++;
                 if(currentIndex<questions.length){
@@ -56,8 +60,9 @@ function showQuestion(){
                 } else{
                     questionElement.textContent="おわり!!!!";
                     choiceElement.innerHTML="";
+                    explantionElement.textContent="";
                 }
-            }, 1000);
+            }, 2000);
         });
         choiceElement.appendChild(button);
     });
