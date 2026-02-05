@@ -15,8 +15,8 @@ HTML/CSS/JavaScript の学習を目的として制作しています。
 - JavaScript(DOM操作／イベント処理)
 
 ## 今後の改善予定
--問題数の追加
--スコア表示機能
+- 問題数の追加
+- スコア表示機能
 
 ## 公開URL
 -https://a-i-ueo.github.io/a/
