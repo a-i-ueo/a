@@ -46,8 +46,11 @@ function showQuestion(){
             buttons.forEach(b =>b.disabled=true);
 
             if(index===q.answer){
+                button.classList.add("correct")
                 resulteElement.textContent="正解!";
-            }else{
+            }else{  
+                button.classList.add("wrong")
+                buttons[q.answer].classList.add("correct")
                 resulteElement.textContent="不正解!";
             }
 
