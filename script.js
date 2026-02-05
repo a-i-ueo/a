@@ -62,7 +62,7 @@ function showQuestion(){
                     choiceElement.innerHTML="";
                     explanationElement.textContent="";
                 }
-            }, 2000);
+            }, 1500);
         });
         choiceElement.appendChild(button);
     });
