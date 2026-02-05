@@ -30,7 +30,7 @@ let currentIndex=0;
 const questionElement=document.getElementById("question");
 const choiceElement=document.getElementById("choices");
 const resulteElement=document.getElementById("result");
-
+const explanationElement=document.getElementById("explanation")
 function showQuestion(){
     const q =questions[currentIndex];
     questionElement.textContent=q.question;
