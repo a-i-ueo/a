@@ -14,3 +14,4 @@ HTML/CSS/JavaScript の学習を目的として制作しています。
 - JavaScript
 
 ## 公開URL
+-https://a-i-ueo.github.io/a/
